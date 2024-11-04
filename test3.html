@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+    <link rel="stylesheet" href="mystyle.css">
+
+
+  </head>
+<body>
+
+
+
+
+
+<form style="text-align: center;">
+  <h1 style="text-align: center;">Login</h1>
+
+  <p id="demo"></p>
+  <input type="email" id="email" placeholder="email@com" required=""><br><br>
+  <input type="password" id="password" placeholder="*******" required=""><br><br>
+  <button onclick="myFunction()">login</button>
+</form>
+
+
+
+
+
+
+
+
+
+<script>
+
+ // let email = document.getElementById("email").nodeValue
+ var password = document.getElementById("password").value;
+ var email = document.getElementById("email").value;
+// dummy data
+const user1={ email:"afnan@gmail.com",password:"333"}
+const user2={ email:"sami@gmail.com",password:"563"}
+const user3={ email:"saad@gmail.com",password:"184"}
+// create array for the objects
+const users = [user1,user2,user3];
+
+
+
+function myFunction() {
+    for (i=0;i<=users.length;i++) {
+
+//  if(email&&password==users[i].email&&users[i].password){
+//      window.alert("succses");
+//   //  location.assign("https://www.w3schools.com");
+// }
+// else{
+//     window.alert("you don't have an account");
+//      break;
+// }
+// }
+
+if (Object.values(users.email).indexOf(email) > -1) {
+  location.assign("https://www.w3schools.com");
+
+}
+    }
+
+// const users = [
+//   { email: 'afnan@gmail.com', password: 'Ab' },
+//   { email: 'afnan@gmail.com', password: 'bB' },
+//   { email: 'afnan@gmail.com', password: 'A' },
+//   { email: 'afnan@gmail.com', password: 'Cb' },
+//   { email: 'afnan@gmail.com', password: 'Bbb' }
+// ];
+
+// // for loop
+// for (let i = 0; i < users.length; i++) {
+//   console.log(data[i]);
+//   if(email.value==users[i].value){
+//  location.assign("https://www.w3schools.com");
+
+//   }
+//   else{
+//     window.alert("you don't have an Account")
+//   }
+// }
+// }
+
+
+}
+
+
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
